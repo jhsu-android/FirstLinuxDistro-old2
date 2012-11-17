@@ -1,4 +1,55 @@
 FirstLinuxDistro
 ================
 
-Source code for the Android app Find Your First Linux Distro
+This is the repository for the source code for the Android app Find Your First Linux Distro.
+
+This app is based on the fragments tutorial at:
+http://bradipao.blogspot.com/2012/03/fragment-tutorial-part-2.html
+
+Given landscape mode, the screen is split into two halves.  A menu consisting of two 
+buttons ("Send Text to Fragment" or "Send Text to Activity") occupies the left half 
+of the screen.  A text message stating which button you most recently pressed ("Text 
+From Fragment" or "Text From Activity" occupies the right half of the screen.  In 
+portrait mode, only the menu half is visible initially, and the view switches to the 
+status portion when you press a button.
+
+HOW THE FRAGMENTS TUTORIAL WORKS
+
+res/layout/ac_main.xml: landscape orientation; layout consisting of the menu 
+	fragment and the status fragment
+res/layout-port/ac_main.xml: portrait orientation; layout consisting of the menu 
+	fragment only
+ac_body.xml: layout consisting of just the status fragment
+fr_body.xml: layout of the fragment displaying the status
+fr_menu.xml: layout of the fragment displaying the menu
+
+JanusActivity.java:
+    main activity; displays ac_main.xml layout;
+    Calls MenuFragment class
+    onMenufrag function: sets text in status fragment or calls BodyActivity
+BodyActivity.java:
+    Portrait mode: displays just the status half of the screen
+    Changes the text in the status fragment
+MenuFragment.java: definition of menu fragment
+    sendBodyTextToActivity("Text From Activity"): calls onMenufrag function in JanusActivity
+    sendBodyTextToFragment("Text From Fragment"): changes the text in the status fragment or
+        calls BodyActivity
+BodyFragment.java: definition of status fragment
+
+PARALLELS
+res/layout/ac_main.xml -> res/layout/general.xml
+res/layout-port/ac_main.xml -> res/layout-port/general.xml
+ac_body.xml -> general_a_only.xml
+fr_body.xml -> fragment_answer.xml
+fr_menu.xml -> fragment_questions.xml
+JanusActivity.java -> ActivityQuestions.java
+BodyActivity.java -> ActivityAnswer.java
+MenuFragment.java -> FragmentQuestions.java
+BodyFragment.java -> FragmentAnswer.java
+
+HOW FIND YOUR FIRST LINUX DISTRO WORKS
+res/layout/general.xml: layout for tablet screens and landscape mode
+res/layout-port/general.xml: layout for smartphones and portrait mode, questions only
+fragment_questions.xml: layout containing the questions
+fragment_answer.xml: layout containing the answer
+general_a_only.xml: layout for smartphones and portrait mode, answers only
