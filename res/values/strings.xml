@@ -6,5 +6,36 @@
         That old PC still has value.
         This app helps you select your first Linux distro based on the specs of your PC.
     </string>
+    <string name="question_purpose">
+        1.  Are you trying to rescue files from a hard drive that does not boot up,
+        or are you ready to install a new OS?
+    </string>
+    
+    <string-array name="purpose_array">
+        <item>Rescuing files from a hard drive that does not boot up</item>
+        <item>Ready to install a new OS</item>
+    </string-array>
+    
+    <string name="question_age">
+        2.  When was your PC built or purchased by the original owner?
+    </string>
+    
+    <string-array name="age_array">
+        <item>Windows Vista era or later (2007 or later)</item>
+        <item>Windows XP era (2002 to 2006)</item>
+        <item>Windows 98/ME/2000 era (1998-2001)</item>
+        <item>Windows 95 era or earlier (1997 or earlier)</item>
+    </string-array>
 
+   	<string name="question_memory">
+        3.  How much memory does your computer have?
+    </string>
+    
+   	<string-array name="memory_array">
+        <item>At least 2 GB</item>
+        <item>At least 512 MB</item>
+        <item>At least 128 MB</item>
+        <item>Under 128 MB</item>
+    </string-array>
+        
 </resources>

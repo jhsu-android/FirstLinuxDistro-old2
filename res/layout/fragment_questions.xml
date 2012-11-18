@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
               android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_purpose" />
+
+    <Spinner
+        android:id="@+id/spinnerPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:prompt="@string/question_purpose" 
+        android:entries="@array/purpose_array"
+        />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_age" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/age_array"
+        />
+
+    <TextView
+        android:id="@+id/textViewMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_memory" />
+
+    <Spinner
+        android:id="@+id/spinnerMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:entries="@array/memory_array"
+        />
 
     <Button
             android:id="@+id/button_submit"

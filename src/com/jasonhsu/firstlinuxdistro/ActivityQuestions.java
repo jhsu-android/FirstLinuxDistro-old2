@@ -9,6 +9,8 @@ public class ActivityQuestions extends FragmentActivity implements FragmentQuest
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.general);
+		
+		
 	}
 	
 	@Override
