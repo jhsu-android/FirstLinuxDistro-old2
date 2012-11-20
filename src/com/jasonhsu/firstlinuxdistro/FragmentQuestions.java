@@ -44,26 +44,24 @@ public class FragmentQuestions extends Fragment {
 	public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_questions,container,false);
 	      
+		// Response when the Submit button is clicked
 		ButtonSubmit = (Button)view.findViewById(R.id.button_submit);
 	    ButtonSubmit.setOnClickListener(new View.OnClickListener() {
 	    	@Override
 	    	public void onClick(View v) {
-	    		sendAnswerToFragment ("TEST");
+	    		sendAnswerToActivity ("TEST");
 	    	}
 	    });
 	      
 	    return view;
 	}
 	
-	private void sendAnswerToFragment (String s) {
-		FragmentAnswer fragment1 = (FragmentAnswer) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_answer);
-		if ((fragment1 != null) && fragment1.isInLayout()) {
-	         fragment1.setText(s);
-	    } 
-		else {
-	         Intent intent = new Intent(getActivity().getApplicationContext(),ActivityAnswer.class);
-	         intent.putExtra("value",s);
-	         startActivity(intent);
-		}
+	private void sendAnswerToActivity(String s) {
+		menufragListener.onMenufrag(s);
 	}
+	
+	private void DecideResponse () {
+		
+	}
+	
 }

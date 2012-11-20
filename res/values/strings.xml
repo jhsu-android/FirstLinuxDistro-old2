@@ -37,5 +37,73 @@
         <item>At least 128 MB</item>
         <item>Under 128 MB</item>
     </string-array>
+    
+   	<string name="solution_puppy">
+   	    Your purpose: rescuing files from a hard drive
+   	    \nAge of your computer: Windows 98 era or newer
+   	    \nComputer memory: at least 128 MB
+   	    \n\nRecommended Linux distro: Puppy Linux
+   	    \n\nA Puppy Linux CD is an excellent tool for rescuing files from your hard
+   	    drive.  Puppy Linux is exceptionally lightweight.  If you have at least 256 
+   	    MB of memory, it loads into RAM and is exceptionally quick.  The unique 
+   	    run-as-root feature is very convenient for copying files from the internal 
+   	    drive to an external drive.
+   	</string>
+   	<string name="solution_tinycore">
+   	    Your purpose: rescuing files from a hard drive
+   	    \nRecommended Linux distro: TinyCore Linux?
+   	    \n\nYour computer cannot run Puppy Linux because it is too old (Windows 95
+   	    era) or has insufficient memory (under 128 MB).  One solution is to boot up
+   	    with TinyCore Linux, which has an ISO size of only 10 MB.  Another solution
+   	    is to use a special adapter that allows you to connect your old internal
+   	    hard drive into an external hard drive that you can connect to the USB port
+   	    of a newer computer.
+   	</string>
+   	<string name="solution_mint_ubuntu">
+   	    Your purpose: installation on a hard drive
+   	    \nAge of your computer: Windows Vista era or newer
+   	    \nComputer memory: at least 2 GB
+   	    \nRecommended Linux distro: Linux Mint Main Edition
+   	    \n\nGiven that your computer is only a few years old and is fast enough for
+   	    Windows Vista/7/8, your best bet is Linux Mint Main Edition (based on
+   	    Ubuntu Linux).  Linux Mint is the most popular Linux distro and is 
+   	    well-known for user-friendliness and a large community.  Of all editions 
+   	    available for Linux Mint, the Main Edition is the most widely used, and 
+   	    that means better support and a larger pool of fellow users who can 
+   	    answer your questions.
+   	</string>
+   	<string name="solution_mint_debian">
+   	    Your purpose: installation on a hard drive
+   	    \nAge of your computer: Windows XP era or newer
+   	    \nComputer memory: at least 512 MB
+   	    \nRecommended Linux distro: Linux Mint Debian Edition
+   	    \n\nGiven that your computer is several years old and is fast enough for
+   	    Windows XP but not Windows Vista/7/8, Linux Mint Debian Edition is your 
+   	    best bet.  LMDE offers the user-friendliness and smoothness of the 
+   	    traditional Ubuntu-based editions of Linux Mint but bypasses the heavy
+   	    Ubuntu overhead in order to provide lighter and faster operation.  
+   	</string>
+   	<string name="solution_antix">
+   	    Your purpose: installation on a hard drive
+   	    \nAge of your computer: Windows 98 era or newer
+   	    \nComputer memory: at least 128 MB
+   	    \nRecommended Linux distro: antiX Linux
+   	    \n\nGiven that your computer is ancient but still fast enough for Windows 
+   	    98, your best bet is antiX Linux, the lightweight derivative of MEPIS 
+   	    Linux.  The full version of antiX Linux is very fast and lightweight, yet 
+   	    is also user-friendly.  Unlike other lightweight Linux distros, 
+   	    antiX Linux is fully compatible with the Debian software repository and
+   	    thus gives you access to over 30,000 software packages.  
+   	</string>
+   	<string name="solution_museum">
+   	    Your purpose: installation on a hard drive
+   	    \nRecommended Linux distro: none   	    
+   	    \n\nYour computer is too old or has insufficient memory for running the
+   	    full version of antiX Linux.  Unless you are geeky enough to use a distro 
+   	    that requires substantial tweaking, your computer is too obsolete for
+   	    everyday use.  It is probably time to donate your computer to a museum 
+   	    exhibit.
+   	</string>
+   	
         
 </resources>

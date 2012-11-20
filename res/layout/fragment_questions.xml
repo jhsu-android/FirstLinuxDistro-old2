@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/blue_med"
     android:orientation="vertical"
     android:padding="10dip" >
 
@@ -17,10 +16,15 @@
         android:id="@+id/spinnerPurpose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/aqua_med"
         android:entries="@array/purpose_array"
         android:prompt="@string/question_purpose"
        	/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+    />
 
     <TextView
         android:id="@+id/textViewAge"
@@ -32,9 +36,14 @@
         android:id="@+id/spinnerAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:background="@color/aqua_med"
         android:entries="@array/age_array"
         android:prompt="@string/question_age"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
         />
 
     <TextView
@@ -47,16 +56,20 @@
         android:id="@+id/spinnerMemory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:background="@color/aqua_med"
         android:entries="@array/memory_array"
         android:prompt="@string/question_memory"
         />
 
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dip" />
+
     <Button
-            android:id="@+id/button_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            />
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_med"
+        android:text="Submit" />
 
 </LinearLayout>

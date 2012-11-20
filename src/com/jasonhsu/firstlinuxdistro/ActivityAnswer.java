@@ -3,6 +3,7 @@ package com.jasonhsu.firstlinuxdistro;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 
 public class ActivityAnswer extends FragmentActivity {
 	@Override
@@ -15,7 +16,7 @@ public class ActivityAnswer extends FragmentActivity {
 			return;
 		} 
 		else { 
-			setContentView(R.layout.general);
+			setContentView(R.layout.general_a_only);
 		}
 		
 		// Show body content as requested in Intent extra
