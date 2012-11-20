@@ -12,7 +12,7 @@
     </string>
     
     <string-array name="purpose_array">
-        <item>Rescuing files from a hard drive that does not boot up</item>
+        <item>Rescuing files from a hard drive</item>
         <item>Ready to install a new OS</item>
     </string-array>
     

@@ -8,9 +8,8 @@ public class ActivityQuestions extends FragmentActivity implements FragmentQuest
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// Use the display at res/layout/general.xml
 		setContentView(R.layout.general);
-		
-		
 	}
 	
 	@Override
@@ -23,9 +22,9 @@ public class ActivityQuestions extends FragmentActivity implements FragmentQuest
 	    	fragment1.setText(s);
 	      	} 
 	    else {
-	         Intent intent = new Intent(this,ActivityAnswer.class);
-	         intent.putExtra("value",s);
-	         startActivity(intent);
+	         Intent intent1 = new Intent(this,ActivityAnswer.class);
+	         intent1.putExtra("value",s);
+	         startActivity(intent1);
 	    }      
 	}
 }

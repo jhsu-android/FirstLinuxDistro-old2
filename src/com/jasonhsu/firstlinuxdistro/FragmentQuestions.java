@@ -48,29 +48,22 @@ public class FragmentQuestions extends Fragment {
 	    ButtonSubmit.setOnClickListener(new View.OnClickListener() {
 	    	@Override
 	    	public void onClick(View v) {
-	    		sendBodyTextToFragment("Text From Fragment");
+	    		sendAnswerToFragment ("TEST");
 	    	}
 	    });
 	      
 	    return view;
 	}
-	   
-	private void sendBodyTextToActivity(String s) {
-		menufragListener.onMenufrag(s);
-	}
-	   
-	private void sendBodyTextToFragment(String s) {
-		// get body fragment (native method is getFragmentManager)
-		FragmentAnswer fragment = (FragmentAnswer) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_answer);
-	      
-	    // if fragment is not null and in layout, set text, else launch BodyActivity
-		if ((fragment!=null)&&fragment.isInLayout()) {
-			fragment.setText(s);
-		} 
+	
+	private void sendAnswerToFragment (String s) {
+		FragmentAnswer fragment1 = (FragmentAnswer) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_answer);
+		if ((fragment1 != null) && fragment1.isInLayout()) {
+	         fragment1.setText(s);
+	    } 
 		else {
-			Intent intent = new Intent(getActivity().getApplicationContext(),ActivityQuestions.class);
-			intent.putExtra("value",s);
-			startActivity(intent);
+	         Intent intent = new Intent(getActivity().getApplicationContext(),ActivityAnswer.class);
+	         intent.putExtra("value",s);
+	         startActivity(intent);
 		}
 	}
 }
