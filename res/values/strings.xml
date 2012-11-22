@@ -23,10 +23,10 @@
     </string>
     
     <string-array name="age_array">
-        <item>Windows Vista era or later (2007 or later)</item>
-        <item>Windows XP era (2002 to 2006)</item>
-        <item>Windows 98/ME/2000 era (1998-2001)</item>
-        <item>Windows 95 era or earlier (1997 or earlier)</item>
+        <item>Windows Vista era or later</item>
+        <item>Windows XP era</item>
+        <item>Windows 98/ME/2000 era</item>
+        <item>Windows 95 era or earlier</item>
     </string-array>
 
    	<string name="question_memory">
@@ -53,7 +53,7 @@
    	</string>
    	<string name="solution_tinycore">
    	    Your purpose: rescuing files from a hard drive
-   	    \nRecommended Linux distro: TinyCore Linux?
+   	    \n\nRecommended Linux distro: TinyCore Linux?
    	    \n\nYour computer cannot run Puppy Linux because it is too old (Windows 95
    	    era) or has insufficient memory (under 128 MB).  One solution is to boot up
    	    with TinyCore Linux, which has an ISO size of only 10 MB.  Another solution
@@ -65,7 +65,7 @@
    	    Your purpose: installation on a hard drive
    	    \nAge of your computer: Windows Vista era or newer
    	    \nComputer memory: at least 2 GB
-   	    \nRecommended Linux distro: Linux Mint Main Edition
+   	    \n\nRecommended Linux distro: Linux Mint Main Edition
    	    \n\nGiven that your computer is only a few years old and is fast enough for
    	    Windows Vista/7/8, your best bet is Linux Mint Main Edition (based on
    	    Ubuntu Linux).  Linux Mint is the most popular Linux distro and is 
@@ -78,7 +78,7 @@
    	    Your purpose: installation on a hard drive
    	    \nAge of your computer: Windows XP era or newer
    	    \nComputer memory: at least 512 MB
-   	    \nRecommended Linux distro: Linux Mint Debian Edition
+   	    \n\nRecommended Linux distro: Linux Mint Debian Edition
    	    \n\nGiven that your computer is several years old and is fast enough for
    	    Windows XP but not Windows Vista/7/8, Linux Mint Debian Edition is your 
    	    best bet.  LMDE offers the user-friendliness and smoothness of the 
@@ -89,7 +89,7 @@
    	    Your purpose: installation on a hard drive
    	    \nAge of your computer: Windows 98 era or newer
    	    \nComputer memory: at least 128 MB
-   	    \nRecommended Linux distro: antiX Linux
+   	    \n\nRecommended Linux distro: antiX Linux
    	    \n\nGiven that your computer is ancient but still fast enough for Windows 
    	    98, your best bet is antiX Linux, the lightweight derivative of MEPIS 
    	    Linux.  The full version of antiX Linux is very fast and lightweight, yet 
