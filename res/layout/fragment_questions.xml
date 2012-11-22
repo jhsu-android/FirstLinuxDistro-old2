@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:padding="10dip" >
-    
-    <TextView
-        android:id="@+id/textViewInstructions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/instructions" 
-        />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    	<TextView
         android:id="@+id/textViewPurpose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_purpose" 
         />
 
-    <Spinner
+    	<Spinner
         android:id="@+id/spinnerPurpose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,19 +23,19 @@
         android:prompt="@string/question_purpose"
        	/>
 
-    <View
+    	<View
         android:id="@+id/view1"
         android:layout_width="match_parent"
         android:layout_height="20dip"
-    />
+    	/>
 
-    <TextView
+    	<TextView
         android:id="@+id/textViewAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_age" />
 
-    <Spinner
+    	<Spinner
         android:id="@+id/spinnerAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
@@ -47,19 +43,19 @@
         android:prompt="@string/question_age"
         />
 
-    <View
+    	<View
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="20dip"
         />
 
-    <TextView
+    	<TextView
         android:id="@+id/textViewMemory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/question_memory" />
 
-    <Spinner
+    	<Spinner
         android:id="@+id/spinnerMemory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
@@ -67,15 +63,18 @@
         android:prompt="@string/question_memory"
         />
 
-    <View
+    	<View
         android:id="@+id/view3"
         android:layout_width="wrap_content"
         android:layout_height="20dip" />
 
-    <Button
+    	<Button
         android:id="@+id/button_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit" />
 
-</LinearLayout>
+    </LinearLayout>
+    
+
+</ScrollView>

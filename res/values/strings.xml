@@ -4,10 +4,9 @@
     <string name="menu_settings">Settings</string>
     <string name="text_intro">Welcome to Find Your First Linux Distro!
         That old PC still has value.
-        This app helps you select your first Linux distro based on the specs of your PC.
-    </string>
-    <string name="instructions">Answer the questions below, and then click on the
-        Submit button to see your recommended solution.\n\n 
+        This app helps you select your first Linux distro based on the specs of 
+        your PC.  On the next page, answer the questions shown, and then click on 
+        the Submit button to see the recommended solution. 
     </string>
     <string name="question_purpose">
         1.  Are you trying to rescue files from a hard drive that does not boot up,
